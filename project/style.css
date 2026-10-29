@@ -1,0 +1,178 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: white;
+    line-height: 1.7;
+}
+
+header {
+    background: #111c30;
+    padding: 20px 7%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 28px;
+    color: #5dd6f5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #5dd6f5;
+}
+
+#menuBtn {
+    display: none;
+}
+
+.hero {
+    min-height: 80vh;
+    padding: 50px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    margin-bottom: 15px;
+}
+
+.hero span,
+.section h2 {
+    color: #5dd6f5;
+}
+
+.profile-img {
+    width: 320px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #5dd6f5;
+}
+
+.btn {
+    display: inline-block;
+    margin: 15px 8px 0 0;
+    padding: 12px 18px;
+    background: #5dd6f5;
+    color: #0b1120;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 50px 7%;
+    scroll-margin-top: 20px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #111c30;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #27364d;
+}
+
+.card h3 {
+    color: #5dd6f5;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.grid .card {
+    text-align: center;
+}
+
+.card a {
+    color: #5dd6f5;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111c30;
+}
+
+@media (max-width: 768px) {
+    #menuBtn {
+        display: block;
+        background: #5dd6f5;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        padding-top: 15px;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+```
